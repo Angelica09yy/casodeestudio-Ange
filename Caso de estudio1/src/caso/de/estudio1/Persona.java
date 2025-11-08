@@ -16,6 +16,10 @@ public class Persona {
     private String correo;
     private int añoNacimiento;
     private int edad;
+    
+    public Persona(){
+        
+    }
 
     public Persona(String nombre, String correo, int añoNacimiento, int edad) {
         this.nombre = nombre;
@@ -70,11 +74,7 @@ public class Persona {
     }
 
     public String mostrarDatos() {
-        String mensaje = "Nombre: " + nombre
-                + "\nCorreo: " + correo
-                + "\nAño nacimiento: " + añoNacimiento
-                + "\nEdad: " + edad
-                + "\n" + (edad >= 18 ? "Es mayor de edad" : "Es menor de edad");
+        String mensaje = "Nombre: " + nombre + "\nCorreo: " + correo + "\nAño nacimiento: " + añoNacimiento + "\nEdad: " + edad + "\n" + (edad >= 18 ? "Es mayor de edad" : "Es menor de edad");
         return mensaje;
     } 
 

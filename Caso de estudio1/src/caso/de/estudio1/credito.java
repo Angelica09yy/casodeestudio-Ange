@@ -16,6 +16,11 @@ public class credito {
     private double interesMensual;
     private int plazoEnMeses;
     private double montoTotal;
+    
+    
+    public credito (){
+        
+    }
 
     public credito(double montoSolicitado, double interesMensual, int plazoEnMeses, double montoTotal) {
         this.montoSolicitado = montoSolicitado;
@@ -70,10 +75,7 @@ public class credito {
     }
 
     public void mostrarDatos() {
-        String mensaje = "monto solicitado: " + montoSolicitado
-                + "\nInteres mensual: " + interesMensual + "%"
-                + "\nPlazo en meses: " + plazoEnMeses
-                + "\nMonto total a pagara: " + montoTotal;
+        String mensaje = "monto solicitado: " + montoSolicitado + "\nInteres mensual: " + interesMensual + "\nPlazo en meses: " + plazoEnMeses + "\nMonto total a pagar: " + montoTotal;
         JOptionPane.showMessageDialog(null, mensaje);
     }
 

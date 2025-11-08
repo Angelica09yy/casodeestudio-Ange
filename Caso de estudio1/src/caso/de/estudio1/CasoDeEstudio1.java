@@ -34,17 +34,18 @@ public class CasoDeEstudio1 {
             ));
 
             switch (opcion) {
-                case 1:
-                    ejercicio1();
+                case 1:{
+                    Persona persona1 = new Persona();
+                }
                     break;
                 case 2:
-                    int num = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero entero positivo: "))
+                    int num = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero entero positivo: "));
                     calcularFactorial(num);
                     break;
                 case 3:
-                    Credito c = new Credito();
-                    c.tomar_datos();
-                    c.mostrar_datos();
+                    credito credito1 = new credito();
+                    credito1.tomarDatos();
+                    credito1.mostrarDatos();
                     break;
                 case 4:
                     JOptionPane.showMessageDialog(null, "Saliendo del programa...");
@@ -56,7 +57,7 @@ public class CasoDeEstudio1 {
         }
     }
 
-    public static void calcular_factorial(int n) {
+    public static void calcularFactorial(int n) {
         if (n <= 0) {
             JOptionPane.showMessageDialog(null, "El número no es entero positivo");
             return;
